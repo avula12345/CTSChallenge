@@ -1,0 +1,38 @@
+<!--Set thread-count = 3 to execute test parallel in 3 max browsers at at time. You can increase it-->
+<suite name="Parallel Tests" verbose="1" thread-count="3" parallel="tests">
+ <tests>
+     <!--Set test parameters to execute test in IE browser on windows plateform.-->
+  <test name="Windows+IE Test" >
+   <parameters>
+    <parameter name="platform" value="Windows" />
+    <parameter name="browser" value="Internet Explorer" />
+    <parameter name="url" value="http://only-testing-blog.blogspot.in/2014/01/textbox.html" />
+   </parameters>
+   <classes>
+    <class name="com.Delete.app.com.Delete.app.SeGridTest" />
+   </classes>
+  </test>
+  <!--Set test parameters to execute test in Firefox browser on windows plateform.-->
+  <test name="Windows+Firefox Test" >
+   <parameters>
+    <parameter name="platform" value="Windows" />
+    <parameter name="browser" value="Firefox" />
+    <parameter name="url" value="http://only-testing-blog.blogspot.in/2014/01/textbox.html" />
+   </parameters>
+   <classes>
+    <class name="com.Delete.app.com.Delete.app.SeGridTest" />
+   </classes>
+  </test> 
+  <!--Set test parameters to execute test in chrome browser on windows plateform.-->
+  <test name="Windows+chrome Test" >
+   <parameters>
+    <parameter name="platform" value="Windows" />
+    <parameter name="browser" value="chrome" />
+    <parameter name="url" value="http://only-testing-blog.blogspot.in/2014/01/textbox.html" />
+   </parameters>
+   <classes>
+    <class name="com.Delete.app.com.Delete.app.SeGridTest" />
+   </classes>
+  </test>   
+ </tests>
+</suite>
